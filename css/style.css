@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Top Offer Bar */
+
+.top-bar {
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  position: relative;
+}
+
+.top-bar p {
+  font-size: 14px;
+}
+
+.top-bar a {
+  color: white;
+  font-weight: bold;
+}
+
+.top-bar i {
+  position: absolute;
+  right: 100px;
+
+  cursor: pointer;
+}
+
+/* nav bar css  */
+
+/* Navbar */
+
+.navbar {
+  height: 80px;
+  padding: 0 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  background-color: white;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.search-box {
+  flex: 1;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  padding: 12px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-box i {
+  color: gray;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+}
+
+/* Hero Section */
+
+.hero {
+  background-color: #f2f0f1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 60px 80px 0 80px;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hero-left p {
+  margin: 25px 0;
+
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hero-left button {
+  background-color: black;
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 15px 55px;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-right {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 90%;
+}
+
+.hero {
+  position: relative;
+}
+
+/* Stars */
+
+.star-big {
+  position: absolute;
+
+  top: 80px;
+  right: 90px;
+
+  width: 90px;
+}
+
+.star-small {
+  position: absolute;
+
+  top: 302px;
+  left: 52%;
+
+  width: 45px;
+}
+
+
+/* Stats */
+
+.stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 45px;
+}
+
+.stat-box {
+  padding-right: 35px;
+  border-right: 1px solid #ccc;
+}
+
+.stat-box:last-child {
+  border-right: none;
+}
+
+.stat-box h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.stat-box p {
+  margin-top: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+
+
