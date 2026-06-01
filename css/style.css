@@ -206,5 +206,324 @@ body {
   font-size: 14px;
 }
 
+.brands {
+    background: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 35px 50px;
+}
+
+.brands h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+/* Products Section */
+
+.products-section {
+  padding: 60px 80px;
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.product-card {
+  width: 100%;
+}
+
+.product-image {
+  background-color: #f0eeed;
+  border-radius: 12px;
+  height: 260px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.rating {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #f5a623;
+}
+
+.price {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.discount {
+  background-color: #ffe5e5;
+  color: #ff3333;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+.view-btn {
+  display: block;
+  margin: 35px auto 0;
+
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+
+  padding: 12px 55px;
+  cursor: pointer;
+}
+
+.section-line {
+  width: calc(100% - 160px);
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Dress Style Full Image */
+
+.dress-image-section {
+  padding: 70px 80px;
+}
+
+.dress-image-section img {
+  width: 100%;
+  max-width: 1000px;
+
+  display: block; 
+  margin: 0 auto;
+
+  border-radius: 30px;
+}
+
+/* Happy Customers */
+
+.customers {
+    padding: 80px;
+}
+
+.customer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.customer-header h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.arrows {
+    display: flex;
+    gap: 20px;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.customer-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.customer-card {
+    flex: 1;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.stars {
+    color: #f5b301;
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.customer-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.customer-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Newsletter */
+
+.newsletter {
+    background: black;
+    color: white;
+
+    max-width: 1100px;
+    margin: 80px auto -70px;
+
+    padding: 40px 60px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 10;
+}
+
+.newsletter-left h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.newsletter-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 350px;
+}
+
+.newsletter-right input {
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    outline: none;
+}
+
+.newsletter-right button {
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    background: #f2f0f1;
+
+    padding: 140px 80px 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-brand {
+    width: 280px;
+}
+
+.footer-brand h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons i {
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer hr {
+    margin: 50px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: #666;
+}
+
 
 
