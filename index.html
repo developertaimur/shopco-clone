@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHOP.CO Clone</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <!-- Icons -->
   <link rel="stylesheet"
@@ -14,42 +16,8 @@
 <body>
 
   <!-- Top Offer Bar -->
-  <div class="top-bar">
-
-    <p>
-      Sign up and get 20% off to your first order.
-      <a href="#">Sign Up Now</a>
-    </p>
-
-    <i class="fa-solid fa-xmark"></i>
-
-  </div>
-
-  <!-- Navbar -->
-<header class="navbar">
-
-  <div class="logo">
-    SHOP.CO
-  </div>
-
-  <nav class="nav-links">
-    <a href="#">Shop</a>
-    <a href="#">On Sale</a>
-    <a href="#">New Arrivals</a>
-    <a href="#">Brands</a>
-  </nav>
-
-  <div class="search-box">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <input type="text" placeholder="Search for products...">
-  </div>
-
-  <div class="nav-icons">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <i class="fa-regular fa-user"></i>
-  </div>
-
-</header>
+ <!-- Navbar -->
+<div id="navbar-container"></div>
 
 <!-- Hero Section -->
 
@@ -278,121 +246,15 @@
 
     </div>
 
-</section>
+    </section>
 
-<section class="newsletter">
+    <!-- newsletter component -->
 
-    <div class="newsletter-left">
+<div id="newsletter-container"></div>
 
-        <h2>
-            STAY UPTO DATE ABOUT <br>
-            OUR LATEST OFFERS
-        </h2>
-
-    </div>
-
-    <div class="newsletter-right">
-
-        <input
-            type="email"
-            placeholder="Enter your email address"
-        >
-
-        <button>
-            Subscribe to Newsletter
-        </button>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-
-    <div class="footer-top">
-
-        <div class="footer-brand">
-
-            <h2>SHOP.CO</h2>
-
-            <p>
-                We have clothes that suits your style and
-                which you're proud to wear. From
-                women to men.
-            </p>
-
-            <div class="social-icons">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>COMPANY</h4>
-
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Works</a>
-            <a href="#">Career</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>HELP</h4>
-
-            <a href="#">Customer Support</a>
-            <a href="#">Delivery Details</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>FAQ</h4>
-
-            <a href="#">Account</a>
-            <a href="#">Manage Deliveries</a>
-            <a href="#">Orders</a>
-            <a href="#">Payments</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>RESOURCES</h4>
-
-            <a href="#">Free eBooks</a>
-            <a href="#">Development Tutorial</a>
-            <a href="#">How to - Blog</a>
-            <a href="#">Youtube Playlist</a>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div class="footer-bottom">
-
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
-
-        <div class="payment-icons">
-
-            <img src="images/icons8-visa-48.png" alt="">
-            <img src="images/icons8-visa-48.png" alt="">
-            <img src="images/icons8-visa-48.png" alt="">
-            <img src="images/icons8-visa-48.png" alt="">
-
-        </div>
-
-    </div>
-
-</footer>
+<!-- footer components -->
+<div id="footer-container"></div>
 
 </body>
+<script src="js/components.js"></script>
 </html>

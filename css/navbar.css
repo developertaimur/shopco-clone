@@ -1,0 +1,90 @@
+/* Top Offer Bar */
+
+.top-bar {
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  position: relative;
+}
+
+.top-bar p {
+  font-size: 14px;
+}
+
+.top-bar a {
+  color: white;
+  font-weight: bold;
+}
+
+.top-bar i {
+  position: absolute;
+  right: 100px;
+
+  cursor: pointer;
+}
+
+/* nav bar css  */
+
+/* Navbar */
+
+.navbar {
+  height: 80px;
+  padding: 0 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  background-color: white;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.search-box {
+  flex: 1;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  padding: 12px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-box i {
+  color: gray;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+}
