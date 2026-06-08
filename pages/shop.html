@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - SHOP.CO</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="../js/components.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="shop-page">
+
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Casual</span>
+        </div>
+
+        <section class="shop-layout">
+
+            <aside class="filters-sidebar">
+
+    <div class="filter-header">
+        <h3>Filters</h3>
+        <i class="fa-solid fa-sliders"></i>
+    </div>
+
+    <div class="filter-section">
+
+        <div class="filter-item">
+            <span>T-shirts</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Shorts</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Shirts</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Hoodie</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Jeans</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+    </div>
+
+    <div class="filter-section">
+        <div class="filter-title">
+            <h4>Price</h4>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+<div class="price-slider">
+
+    <div class="slider-line">
+        <div class="slider-active"></div>
+
+        <span class="slider-dot left-dot"></span>
+        <span class="slider-dot right-dot"></span>
+    </div>
+
+    <div class="price-values">
+        <span>$50</span>
+        <span>$200</span>
+    </div>
+
+</div>    </div>
+
+    <div class="filter-section">
+        <div class="filter-title">
+            <h4>Colors</h4>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <div class="colors-grid">
+
+            <span class="color green"></span>
+            <span class="color red"></span>
+            <span class="color yellow"></span>
+            <span class="color orange"></span>
+            <span class="color blue"></span>
+
+            <span class="color darkblue active"></span>
+            <span class="color purple"></span>
+            <span class="color pink"></span>
+            <span class="color white"></span>
+            <span class="color black"></span>
+
+        </div>
+    </div>
+
+    <div class="filter-section">
+        <div class="filter-title">
+            <h4>Size</h4>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <div class="sizes-grid">
+
+            <button>XX-Small</button>
+            <button>X-Small</button>
+            <button>Small</button>
+            <button>Medium</button>
+
+            <button class="active-size">Large</button>
+            <button>X-Large</button>
+            <button>XX-Large</button>
+            <button>3X-Large</button>
+            <button>4X-Large</button>
+
+        </div>
+    </div>
+
+    <div class="filter-section">
+
+        <div class="filter-title">
+            <h4>Dress Style</h4>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Casual</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Formal</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Party</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="filter-item">
+            <span>Gym</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+    </div>
+
+    <button class="apply-filter-btn">
+        Apply Filter
+    </button>
+
+</aside>
+
+            <section class="products-section">
+                <div class="products-header">
+                    <h1>Casual</h1>
+
+                    <p>
+                        Showing 1-10 of 100 Products
+                        <span>Sort by: <b>Most Popular</b></span>
+                    </p>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Product cards next step mein add karenge -->
+                     <div class="product-card">
+    <div class="product-image">
+        <img src="../images/product1.png" alt="Gradient Graphic T-shirt">
+    </div>
+    <h3 class="product-name">Gradient Graphic T-shirt</h3>
+    <div class="product-rating">⭐⭐⭐⭐☆ <span>3.5/5</span></div>
+    <div class="product-price"><span class="current-price">$145</span></div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product2.png" alt="Polo with Tipping Details">
+    </div>
+    <h3 class="product-name">Polo with Tipping Details</h3>
+    <div class="product-rating">⭐⭐⭐⭐☆ <span>4.5/5</span></div>
+    <div class="product-price"><span class="current-price">$180</span></div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product3.png" alt="Black Striped T-shirt">
+    </div>
+    <h3 class="product-name">Black Striped T-shirt</h3>
+    <div class="product-rating">⭐⭐⭐⭐⭐ <span>5.0/5</span></div>
+    <div class="product-price">
+        <span class="current-price">$120</span>
+        <span class="old-price">$150</span>
+        <span class="discount">-30%</span>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product4.png" alt="Skinny Fit Jeans">
+    </div>
+    <h3 class="product-name">Skinny Fit Jeans</h3>
+    <div class="product-rating">⭐⭐⭐☆☆ <span>3.5/5</span></div>
+    <div class="product-price">
+        <span class="current-price">$240</span>
+        <span class="old-price">$260</span>
+        <span class="discount">-20%</span>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product5.png" alt="Checkered Shirt">
+    </div>
+    <h3 class="product-name">Checkered Shirt</h3>
+    <div class="product-rating">⭐⭐⭐⭐☆ <span>4.5/5</span></div>
+    <div class="product-price"><span class="current-price">$180</span></div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product6.png" alt="Sleeve Striped T-shirt">
+    </div>
+    <h3 class="product-name">Sleeve Striped T-shirt</h3>
+    <div class="product-rating">⭐⭐⭐⭐☆ <span>4.5/5</span></div>
+    <div class="product-price">
+        <span class="current-price">$130</span>
+        <span class="old-price">$160</span>
+        <span class="discount">-30%</span>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product7.png" alt="Vertical Striped Shirt">
+    </div>
+    <h3 class="product-name">Vertical Striped Shirt</h3>
+    <div class="product-rating">⭐⭐⭐⭐⭐ <span>5.0/5</span></div>
+    <div class="product-price">
+        <span class="current-price">$212</span>
+        <span class="old-price">$232</span>
+        <span class="discount">-20%</span>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product8.png" alt="Courage Graphic T-shirt">
+    </div>
+    <h3 class="product-name">Courage Graphic T-shirt</h3>
+    <div class="product-rating">⭐⭐⭐⭐☆ <span>4.0/5</span></div>
+    <div class="product-price"><span class="current-price">$145</span></div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="../images/product9.png" alt="Loose Fit Bermuda Shorts">
+    </div>
+    <h3 class="product-name">Loose Fit Bermuda Shorts</h3>
+    <div class="product-rating">⭐⭐⭐☆☆ <span>3.0/5</span></div>
+    <div class="product-price"><span class="current-price">$80</span></div>
+</div>
+                </div>
+
+
+                <div class="pagination">
+
+    <button class="page-btn">
+        ← Previous
+    </button>
+
+    <div class="page-numbers">
+        <span class="active-page">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>...</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+    </div>
+
+    <button class="page-btn">
+        Next →
+    </button>
+
+</div>
+                
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id="newsletter-container"></div>
+    <div id="footer-container"></div>
+
+</body>
+</html>
