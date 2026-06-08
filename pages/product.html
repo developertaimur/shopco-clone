@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - SHOP.CO</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <span>></span>
+            <a href="#">Shop</a>
+            <span>></span>
+            <a href="#">Men</a>
+            <span>></span>
+            <p id="breadcrumb-category">T-Shirts</p>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Product Images -->
+            <div class="product-gallery">
+
+                <div class="small-images" id="thumbnail-container">
+                    <img src="../images/product-1.png" alt="Product thumbnail">
+                    <img src="../images/product-2.png" alt="Product thumbnail">
+                    <img src="../images/product-3.png" alt="Product thumbnail">
+                </div>
+
+                <div class="main-image">
+                    <img id="main-product-image" src="../images/product-main.png" alt="Main product image">
+                </div>
+
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+
+                <h1 id="product-name">ONE LIFE GRAPHIC T-SHIRT</h1>
+
+                <div class="rating">
+                    <span id="product-stars">★★★★★</span>
+                    <span id="product-rating">4.5/5</span>
+                </div>
+
+                <div class="price">
+                    <h2 id="product-price">$260</h2>
+                    <del id="product-old-price">$300</del>
+                    <div class="discount" id="product-discount">-40%</div>
+                </div>
+
+                <p class="description" id="product-description">
+                    This graphic t-shirt which is perfect for any occasion.
+                    Crafted from a soft and breathable fabric, it offers superior
+                    comfort and style.
+                </p>
+
+                <hr>
+
+                <div class="colors-section">
+                    <p>Select Colors</p>
+
+                    <div class="colors" id="product-colors">
+                        <button class="color brown active-color" data-color="brown"></button>
+                        <button class="color green" data-color="green"></button>
+                        <button class="color navy" data-color="navy"></button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="sizes-section">
+                    <p>Choose Size</p>
+
+                    <div class="sizes" id="product-sizes">
+                        <button data-size="Small">Small</button>
+                        <button data-size="Medium">Medium</button>
+                        <button class="active-size" data-size="Large">Large</button>
+                        <button data-size="X-Large">X-Large</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="cart-section">
+
+                    <div class="quantity">
+                        <button id="decrease-qty">-</button>
+                        <span id="product-quantity">1</span>
+                        <button id="increase-qty">+</button>
+                    </div>
+
+                    <button class="add-cart" id="add-to-cart-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Product Tabs Section -->
+    <section class="product-tabs">
+
+        <div class="tabs-header">
+            <button data-tab="details">Product Details</button>
+            <button class="active-tab" data-tab="reviews">Rating & Reviews</button>
+            <button data-tab="faqs">FAQs</button>
+        </div>
+
+        <div class="reviews-top">
+            <h2>
+                All Reviews
+                <span id="reviews-count">(451)</span>
+            </h2>
+
+            <div class="review-actions">
+                <button class="filter-btn">☰</button>
+                <button class="latest-btn">Latest</button>
+                <button class="write-review-btn">Write a Review</button>
+            </div>
+        </div>
+
+        <div class="reviews-grid" id="reviews-container">
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+
+                <h3>Sarah M. ✔</h3>
+
+                <p>
+                    "I'm blown away by the quality and style of the clothes I received from SHOP.CO.
+                    From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                </p>
+
+                <span>Posted on August 14, 2023</span>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+
+                <h3>Alex K. ✔</h3>
+
+                <p>
+                    "Finding clothes that align with my personal style used to be a challenge until I discovered SHOP.CO.
+                    The range of options they offer is truly remarkable."
+                </p>
+
+                <span>Posted on August 15, 2023</span>
+            </div>
+
+        </div>
+
+        <div class="load-more-box">
+            <button id="load-more-reviews">Load More Reviews</button>
+        </div>
+
+    </section>
+
+    <section class="related-products">
+
+    <h2>YOU MIGHT ALSO LIKE</h2>
+
+    <div class="related-products-grid">
+
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../images/product-1.png" alt="">
+            </div>
+
+            <h3>Polo with Contrast Trims</h3>
+            <p class="stars">★★★★☆ <span>4.0/5</span></p>
+
+            <div class="product-price">
+                <strong>$212</strong>
+                <del>$242</del>
+                <span>-20%</span>
+            </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../images/product-2.png" alt="">
+            </div>
+
+            <h3>Gradient Graphic T-shirt</h3>
+            <p class="stars">★★★☆☆ <span>3.5/5</span></p>
+
+            <div class="product-price">
+                <strong>$145</strong>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../images/product-3.png" alt="">
+            </div>
+
+            <h3>Polo with Tipping Details</h3>
+            <p class="stars">★★★★☆ <span>4.5/5</span></p>
+
+            <div class="product-price">
+                <strong>$180</strong>
+            </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../images/product-main.png" alt="">
+            </div>
+
+            <h3>Black Striped T-shirt</h3>
+            <p class="stars">★★★★★ <span>5.0/5</span></p>
+
+            <div class="product-price">
+                <strong>$120</strong>
+                <del>$150</del>
+                <span>-30%</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Newsletter -->
+    <div id="newsletter-container"></div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
