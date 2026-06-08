@@ -301,4 +301,20 @@ body {
     line-height: 1.6;
 }
 
+.product-card {
+    cursor: pointer;
+}
+
+.product-card h3 {
+    cursor: pointer;
+}
+
+.product-image {
+    cursor: pointer;
+}
+
+.product-card:hover h3 {
+    text-decoration: underline;
+}
+
 
