@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/toast.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -19,129 +20,52 @@
 
     <main class="cart-page">
 
-        <!-- Breadcrumb -->
-
         <div class="breadcrumb">
             <a href="../index.html">Home</a>
             <span>›</span>
             <p>Cart</p>
         </div>
 
-        <!-- Title -->
-
         <h1>Your Cart</h1>
-
-        <!-- Main Layout -->
 
         <section class="cart-layout">
 
-            <!-- Left Side -->
+            <div class="cart-items" id="cart-items"></div>
 
-            <div class="cart-items" id="cart-items">
+            <div class="order-summary" id="order-summary">
 
-                <div class="cart-item">
-                    <img src="../images/product1.png" alt="Gradient Graphic T-shirt">
+                <h2>Order Summary</h2>
 
-                    <div class="cart-info">
-                        <h3>Gradient Graphic T-shirt</h3>
-                        <p>Size: <span>Large</span></p>
-                        <p>Color: <span>White</span></p>
-                        <h4>$145</h4>
-                    </div>
-
-
-<button class="delete-btn">
-    <i class="fa-solid fa-trash"></i>
-</button>
-                    <div class="quantity-box">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">$0</strong>
                 </div>
 
-                <div class="cart-item">
-                    <img src="../images/product5.png" alt="Checkered Shirt">
-
-                    <div class="cart-info">
-                        <h3>Checkered Shirt</h3>
-                        <p>Size: <span>Medium</span></p>
-                        <p>Color: <span>Red</span></p>
-                        <h4>$180</h4>
-                    </div>
-
-
-<button class="delete-btn">
-    <i class="fa-solid fa-trash"></i>
-</button>
-                    <div class="quantity-box">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                <div class="summary-row">
+                    <span>Discount (-20%)</span>
+                    <strong class="discount-price" id="discount">-$0</strong>
                 </div>
 
-                <div class="cart-item">
-                    <img src="../images/product4.png" alt="Skinny Fit Jeans">
-
-                    <div class="cart-info">
-                        <h3>Skinny Fit Jeans</h3>
-                        <p>Size: <span>Large</span></p>
-                        <p>Color: <span>Blue</span></p>
-                        <h4>$240</h4>
-                    </div>
-
-<button class="delete-btn">
-    <i class="fa-solid fa-trash"></i>
-</button>
-                    <div class="quantity-box">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <strong id="delivery-fee">$0</strong>
                 </div>
 
-            </div>
+                <div class="summary-line"></div>
 
-            <!-- Right Side -->
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <strong id="total-price">$0</strong>
+                </div>
 
-<div class="order-summary" id="order-summary">
+                <div class="promo-box">
+                    <input type="text" id="promo-code" placeholder="🏷️  Add promo code">
+                    <button>Apply</button>
+                </div>
 
-    <h2>Order Summary</h2>
-
-    <div class="summary-row">
-        <span>Subtotal</span>
-        <strong id="subtotal">$565</strong>
-    </div>
-
-    <div class="summary-row">
-        <span>Discount (-20%)</span>
-        <strong class="discount-price" id="discount">-$113</strong>
-    </div>
-
-    <div class="summary-row">
-        <span>Delivery Fee</span>
-        <strong id="delivery-fee">$15</strong>
-    </div>
-
-    <div class="summary-line"></div>
-
-    <div class="summary-row total-row">
-        <span>Total</span>
-        <strong id="total-price">$467</strong>
-    </div>
-
-    <div class="promo-box">
-        <input type="text" id="promo-code" placeholder="🏷️  Add promo code">
-        <button>Apply</button>
-    </div>
-
-    <button class="checkout-btn">
-        Go to Checkout →
-    </button>
-
-</div>
-                <!-- Next step mein banayenge -->
+                <button class="checkout-btn">
+                    Go to Checkout →
+                </button>
 
             </div>
 
@@ -152,6 +76,10 @@
     <div id="newsletter-container"></div>
 
     <div id="footer-container"></div>
+
+    <script src="../js/cartCounter.js"></script>
+    <script src="../js/toast.js"></script>
+    <script src="../js/cart.js"></script>
 
 </body>
 </html>
