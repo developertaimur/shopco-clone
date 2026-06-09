@@ -20,6 +20,11 @@ if (navbarContainer) {
     })
     .then(function(data) {
       navbarContainer.innerHTML = data;
+
+      // Cart Counter Update
+      if (typeof updateCartCounter === "function") {
+        updateCartCounter();
+      }
     });
 }
 

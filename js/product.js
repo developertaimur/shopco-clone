@@ -247,6 +247,7 @@ addToCartBtn.addEventListener(
             "cart",
             JSON.stringify(cart)
         );
+        updateCartCounter();
 
    showToast("Product added to cart!");
 
