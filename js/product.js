@@ -119,3 +119,136 @@ selectedProduct.thumbnails.forEach(function(image) {
 
     thumbnailContainer.appendChild(img);
 });
+
+// Color Selection
+
+const colorButtons = document.querySelectorAll(".color");
+
+colorButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        colorButtons.forEach(function(color) {
+            color.classList.remove("active-color");
+        });
+
+        button.classList.add("active-color");
+
+    });
+
+}); 
+
+
+// Size Selection
+
+const sizeButtons = document.querySelectorAll(
+    "#product-sizes button"
+);
+
+sizeButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        sizeButtons.forEach(function(size) {
+            size.classList.remove("active-size");
+        });
+
+        button.classList.add("active-size");
+
+    });
+
+});
+
+// Quantity System
+
+const decreaseBtn = document.getElementById(
+    "decrease-qty"
+);
+
+const increaseBtn = document.getElementById(
+    "increase-qty"
+);
+
+const quantityText = document.getElementById(
+    "product-quantity"
+);
+
+let quantity = 1;
+
+increaseBtn.addEventListener(
+    "click",
+    function() {
+
+        quantity++;
+
+        quantityText.innerText = quantity;
+
+    }
+);
+
+decreaseBtn.addEventListener(
+    "click",
+    function() {
+
+        if (quantity > 1) {
+
+            quantity--;
+
+            quantityText.innerText = quantity;
+
+        }
+
+    }
+);
+
+// Add To Cart
+
+const addToCartBtn = document.getElementById(
+    "add-to-cart-btn"
+);
+
+addToCartBtn.addEventListener(
+    "click",
+    function() {
+
+        const selectedColor =
+            document.querySelector(
+                ".active-color"
+            ).dataset.color;
+
+        const selectedSize =
+            document.querySelector(
+                ".active-size"
+            ).dataset.size;
+
+        const cartItem = {
+
+            name: selectedProduct.name,
+
+            image: selectedProduct.mainImage,
+
+            price: selectedProduct.price,
+
+            color: selectedColor,
+
+            size: selectedSize,
+
+            quantity: quantity
+
+        };
+
+        let cart = JSON.parse(
+            localStorage.getItem("cart")
+        ) || [];
+
+        cart.push(cartItem);
+
+        localStorage.setItem(
+            "cart",
+            JSON.stringify(cart)
+        );
+
+   showToast("Product added to cart!");
+
+    }
+);
